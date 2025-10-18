@@ -1,0 +1,70 @@
+# Neovim runtime-generated files
+# XDG: ~/.local/share/nvim, ~/.cache/nvim, ~/.config/nvim is repo root (config only)
+# If your repo is ~/.config/nvim, these patterns assume you commit only config.
+
+# Swap, backup, undo, session, shada
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+Session.vim
+shada
+shada.tmp
+*.zip
+
+# Neovim cache directories (if they end up inside your repo; usually they are outside)
+cache/
+tmp/
+tags
+
+# Plugin managers: lazy.nvim / packer.nvim / plug / dein
+# Keep lockfile if you want reproducible installs (lazy-lock.json is OK to commit).
+# Exclude actual plugin installs and compiled artifacts.
+plugin/
+# If you keep custom plugin lua under plugin/, move them to lua/ or after/ and track them.
+# For lazy.nvim specifically:
+lazy-lock.json ! # REMOVE this line if you don't want to commit the lockfile
+# If your lazy directory is inside config (rare), ignore it:
+lua_lazy/
+# Packer compiled file (commonly generated in plugin/)
+packer_compiled.lua
+
+# Mason (LSP/DAP/formatter binaries and packages)
+# Usually under ~/.local/share/nvim/mason — not in the config repo.
+# If you vendor mason inside the repo, ignore its packages:
+mason/
+.mason/
+
+# Treesitter compiled parsers (if placed under your repo; typically in share dir)
+parsers/
+tree-sitter-*
+
+# Coc.nvim, nvim-cmp caches
+.coc/
+coc.nvim/
+coc-settings-local.json
+
+# LS, DAP, formatter local caches
+log/
+logs/
+.vscode/
+.dap/
+.python-venv/
+.venv/
+venv/
+node_modules/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup of config you might generate
+*.old
+*.backup
+
+# If you keep spell files generated locally
+spell/*.spl
+spell/*.sug
+

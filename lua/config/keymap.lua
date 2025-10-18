@@ -1,0 +1,13 @@
+local vim = vim
+vim.api.nvim_set_keymap('n', '<Leader>ff', "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>fg', "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>fb', "<cmd>Telescope buffers<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Leader>fh', "<cmd>Telescope help_tags<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fc', '<cmd>Telescope current_buffer_fuzzy_find<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<C-n>', '<cmd>Neotree toggle<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-m>', ':Neotree filesystem reveal left<CR>')
+vim.keymap.set('n', '<Leader>gg', "<cmd>LazyGit<CR>", {noremap = true, silent = true})
+vim.keymap.set('n', '<Leader>tt', "<cmd>ToggleTerm name=Temporary Terminal<CR>", {noremap = true, silent = true})
+vim.keymap.set('n', 'K',  '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', {noremap = true, silent = true})
+vim.keymap.set('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', {noremap = true, silent = true})
