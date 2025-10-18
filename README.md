@@ -26,3 +26,4 @@ nvim
 - version-manager: mise
 - task-runner: mise
 - ai: opencode
+- container-tools: colima
