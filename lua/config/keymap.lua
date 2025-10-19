@@ -13,3 +13,6 @@ vim.keymap.set('n', 'K',  '<cmd>lua vim.lsp.buf.hover()<CR>', {noremap = true, s
 vim.keymap.set('n', 'gr', function() tb.lsp_references() end, {noremap = true, silent = true})
 vim.keymap.set('n', 'gd', function() tb.lsp_definitions() end, {noremap = true, silent = true})
 vim.keymap.set('n', '<leader>mt', '<cmd>RenderMarkdown toggle<CR>', {noremap = true, silent = true})
+
+vim.keymap.set('v', '<Leader>t', ":'<,'>TranslateW<CR>", {noremap = true, silent = true })
+
