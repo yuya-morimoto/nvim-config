@@ -16,7 +16,7 @@ return {
         visible = false, -- デフォルトで隠されているかどうか
         show_hidden_count = true,
         hide_dotfiles = false, -- dotfileを隠すかどうか
-        hide_gitignored = false, -- gitignoreされているファイルを隠すかどうか
+        hide_gitignored = false,
         hide_by_name = {
           "node_modules",
         },
