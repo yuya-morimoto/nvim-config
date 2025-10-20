@@ -4,5 +4,10 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+    pickers = {
+      find_files = {
+        no_ignore = true,
+      }
+    }
   },
 }
