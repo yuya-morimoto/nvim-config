@@ -6,6 +6,10 @@ prepared
 
 ```bash
 brew install nvim
+
+brew install lagygit
+
+brew install ripgrep
 ```
 
 ### 1. clone
