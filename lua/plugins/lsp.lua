@@ -7,6 +7,7 @@ return {
           "vtsls",
           "jdtls",
           "pyright",
+          "rust-analyzer",
         },
     },
     dependencies = {

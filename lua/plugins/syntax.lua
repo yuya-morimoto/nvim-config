@@ -18,6 +18,7 @@ return {
           "java",
           "javadoc",
           "kotlin",
+          "rust",
         },
         auto_install = true,
         highlight = {
